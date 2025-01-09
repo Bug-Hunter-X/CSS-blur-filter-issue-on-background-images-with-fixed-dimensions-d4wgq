@@ -1,0 +1,1 @@
+This repository contains a demonstration of a CSS bug related to the `filter: blur()` property when applied to elements with background images and fixed dimensions. The bug causes the blurred effect to be unexpectedly cut off or distorted.  A solution is provided to fix this issue.  The files `bug.css` and `bugSolution.css` illustrate the problem and its solution respectively.
