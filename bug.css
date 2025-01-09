@@ -1,0 +1,1 @@
+The CSS property `filter: blur()` does not work properly when applied to an element with a background image and a fixed `width` and `height`.
