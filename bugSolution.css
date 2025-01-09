@@ -1,0 +1,21 @@
+To fix this, you can apply the blur filter to a pseudo-element (e.g. `::before` or `::after`) instead of directly to the element with the background image. This allows the blur to extend beyond the element's boundaries without affecting the background image's dimensions.  Here is an example using the `::before` pseudo-element:
+
+```css
+.container {
+  width: 200px;
+  height: 150px;
+  position: relative;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('your-image.jpg');
+  filter: blur(5px);
+}
+```
+This solution keeps the background image sharp while applying a smooth blur effect.
